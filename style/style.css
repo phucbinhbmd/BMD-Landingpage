@@ -66,6 +66,7 @@ p {
   width: 60%;
   position: absolute;
   right: 0;
+  top: 0;
 }
 
 .banner-container .feature {
@@ -151,6 +152,11 @@ p {
 .features-container .feature-item {
   margin-top: 40px;
   width: fit-content;
+}
+
+.call-feature {
+  margin-top: -2em;
+  margin-bottom: 2em;
 }
 /* End Section 3 */
 
