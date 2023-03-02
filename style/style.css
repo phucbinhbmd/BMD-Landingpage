@@ -88,9 +88,10 @@ p {
 }
 
 .info-container .mockup {
-  width: 625px;
+  max-width: 400px;
   position: absolute;
-  left: -15px;
+  left: -84px;
+  top: 20px;
 }
 
 .info-container .content {
@@ -151,7 +152,7 @@ p {
 }
 .features-container .feature-item {
   margin-top: 40px;
-  width: fit-content;
+  width: 50%;
 }
 
 .call-feature {
@@ -254,6 +255,22 @@ textarea {
 label {
   color: #4cd2d5;
   margin-bottom: 5px;
+}
+
+@media screen and (max-width: 1500px) {
+  .banner-container {
+    min-height: 780px;
+  }
+
+  .info-container {
+    min-height: 650px;
+  }
+
+  .some-features-container > .content {
+    margin-top: 0 !important;
+    min-height: unset;
+    padding-top: 0;
+  }
 }
 
 @media screen and (max-width: 960px) {
