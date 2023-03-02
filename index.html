@@ -25,6 +25,9 @@
 
 
 <body>
+    <div class="to-top-btn hidden" id="to-top-btn" onclick="topFunction()">
+        <img src="./images/to-top.svg">
+    </div>
     <!-- section 1 -->
     <div class="container-fluid banner-container">
         <div class="container">
@@ -304,5 +307,29 @@
         Copyright 2023 © by bmdsolutions.vn
     </div> -->
 </body>
+<script>
+    // Get the button
+    let toTopBtn = document.getElementById("to-top-btn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        console.log('scroll', toTopBtn);
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+
+
+            toTopBtn.classList.remove("hidden")
+        } else {
+            toTopBtn.classList.add("hidden")
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
 
 </html>
