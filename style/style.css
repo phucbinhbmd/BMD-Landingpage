@@ -1,10 +1,12 @@
+/* LANDING PAGE */
 .landing-page h1 {
-  font-weight: bold;
+  font-weight: 600;
   font-size: 37px;
+  margin-top: 5px;
 }
 
 .landing-page h2 {
-  font-weight: bold;
+  font-weight: 600;
   color: #115264;
   font-size: 24px;
 }
@@ -13,6 +15,9 @@
   line-height: 27px !important;
   margin-bottom: 0;
   color: #115264;
+  font-size: 18px;
+  text-align: left !important;
+  font-size: 18px !important;
 }
 
 .landing-page .to-top-btn {
@@ -50,7 +55,7 @@
 }
 
 .landing-page .sub-title {
-  font-weight: 700;
+  font-weight: 600;
   color: #115264;
   font-size: 24px;
 }
@@ -72,7 +77,7 @@
   border: none;
   font-size: 16px;
   padding: 10px 20px;
-  font-weight: 700;
+  font-weight: 600;
   transition: 0.3s;
 }
 
@@ -84,6 +89,7 @@
   background: linear-gradient(225deg, #19e2cc 0%, #08b0b8 100%) !important;
   border: none;
   box-shadow: 0px 6px 14px -5px rgba(9, 177, 185, 0.4) !important;
+  color: #fff;
 }
 
 .landing-page .btn:hover {
@@ -98,10 +104,6 @@
 
   position: relative;
 }
-
-/* .landing-page .banner-container .logo {
-  transform: translateY(30px);
-} */
 
 .landing-page .banner-container .mockup {
   width: 60%;
@@ -164,8 +166,10 @@
 .info-container .feature-item b,
 .landing-page .some-features-container .feature-item b {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 600;
   color: #115264;
+  margin-bottom: 5px;
+  display: block;
 }
 
 .info-container .feature-item p,
@@ -195,11 +199,16 @@
 .landing-page .features-container .feature {
   padding-right: 10px;
   display: flex;
+  flex-wrap: wrap;
 }
 .landing-page .features-container .feature-item {
   margin-top: 40px;
   width: 50%;
   text-align: center;
+}
+
+.landing-page .features-container .feature-item p {
+  text-align: center !important;
 }
 
 .landing-page .call-feature {
@@ -375,10 +384,10 @@
   }
 
   .landing-page .tablet-w100 {
-    padding: 0;
+    padding: 0 !important;
     width: 100vw;
     margin: 0;
-    margin-left: -12px;
+    margin-left: -15px;
     max-width: unset;
   }
 }
@@ -409,6 +418,10 @@
 }
 
 @media screen and (max-width: 600px) {
+  .vc_empty_space {
+    height: 0 !important;
+  }
+
   .landing-page ul {
     font-size: 18px;
   }
@@ -417,17 +430,20 @@
     display: block;
   }
 
+  .landing-page .banner-container .content {
+    padding-top: 65px;
+  }
+
   .landing-page .banner-container {
-    background-image: url("https://bmdsolutions.vn/wp-content/uploads/LP-FoodDelivering/section1/Section1-BG-Mobile.png");
+    background-image: url("https://bmdsolutions.vn/wp-content/uploads/LP-FoodDelivering/section1/Section1-BG-Mobile.svg");
     background-size: 100% auto;
   }
 
   .landing-page .banner-container .mockup {
+    width: 103vw;
     position: relative;
-    width: 100vw;
-    position: relative;
-    margin: 5em -1.3px;
-    /* margin: 2em 0; */
+    margin: 5em -1px;
+    transform: scale(1.15);
   }
 
   .landing-page .info-container .mockup {
@@ -445,7 +461,7 @@
   }
 
   .landing-page .quote-box {
-    padding: 50px;
+    padding: 50px 10px;
     font-size: 18px;
   }
 
@@ -490,10 +506,10 @@
   }
 
   .landing-page .section-5-img {
-    margin-left: -12px;
+    margin: 0 -15px;
     width: 100vw;
-    padding: 0;
-    margin-right: 0;
+    padding: 0 !important;
+    margin-bottom: 3em;
   }
 
   .landing-page .section-5-img img {
@@ -510,3 +526,9 @@
     margin-right: 0;
   }
 }
+
+#text-center {
+  text-align: center !important;
+}
+
+/* Landing page */
